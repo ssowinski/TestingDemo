@@ -1,0 +1,12 @@
+sourceryCommand: null
+TestingDemoTests:
+  sources:
+    include:
+    - ./TestingDemo
+  output: ./TestingDemoTests/Mock.generated.swift
+  targets:
+  - TestingDemoTests
+  testable:
+  - TestingDemo
+  import:
+  - Foundation

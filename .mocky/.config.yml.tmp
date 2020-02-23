@@ -1,0 +1,12 @@
+sources:
+  include:
+  - ../TestingDemo
+templates:
+- /Users/slawomirsowinski/dev/TestingDemo/.mocky/.template.swifttemplate
+output: /Users/slawomirsowinski/dev/TestingDemo/.mocky/types.yaml
+args:
+  swiftyMocky:
+    import:
+    - Foundation
+    testable:
+    - TestingDemo
