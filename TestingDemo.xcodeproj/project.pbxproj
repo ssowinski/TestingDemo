@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4077F9A49D6CAAAB3FF67375 /* Pods_TestingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1046E830AC1ED21AE2EA71E8 /* Pods_TestingDemo.framework */; };
+		B318E4F72402B01900519A22 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318E4F62402B01900519A22 /* Customer.swift */; };
+		B318E4F92402B04000519A22 /* CustomerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318E4F82402B04000519A22 /* CustomerProvider.swift */; };
+		B318E4FB2402B06F00519A22 /* CustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318E4FA2402B06F00519A22 /* CustomerViewModel.swift */; };
 		B336A342240288BF0088C503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336A341240288BF0088C503 /* AppDelegate.swift */; };
 		B336A344240288BF0088C503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336A343240288BF0088C503 /* SceneDelegate.swift */; };
 		B336A346240288BF0088C503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336A345240288BF0088C503 /* ViewController.swift */; };
@@ -34,6 +37,9 @@
 		404AAFB1C9581184D7F43AE9 /* Pods-TestingDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TestingDemoTests/Pods-TestingDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD37920060A6693D79B70AC8 /* Pods_TestingDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF91D192A2352C3AEE3B0DAA /* Pods-TestingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingDemo.release.xcconfig"; path = "Target Support Files/Pods-TestingDemo/Pods-TestingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B318E4F62402B01900519A22 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		B318E4F82402B04000519A22 /* CustomerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerProvider.swift; sourceTree = "<group>"; };
+		B318E4FA2402B06F00519A22 /* CustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewModel.swift; sourceTree = "<group>"; };
 		B336A33E240288BF0088C503 /* TestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B336A341240288BF0088C503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B336A343240288BF0088C503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +91,6 @@
 				404AAFB1C9581184D7F43AE9 /* Pods-TestingDemoTests.debug.xcconfig */,
 				B62A9488C21322C6A92B3824 /* Pods-TestingDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +124,9 @@
 				B336A34A240288C00088C503 /* Assets.xcassets */,
 				B336A34C240288C00088C503 /* LaunchScreen.storyboard */,
 				B336A34F240288C00088C503 /* Info.plist */,
+				B318E4F62402B01900519A22 /* Customer.swift */,
+				B318E4F82402B04000519A22 /* CustomerProvider.swift */,
+				B318E4FA2402B06F00519A22 /* CustomerViewModel.swift */,
 			);
 			path = TestingDemo;
 			sourceTree = "<group>";
@@ -320,7 +328,10 @@
 			files = (
 				B336A346240288BF0088C503 /* ViewController.swift in Sources */,
 				B336A342240288BF0088C503 /* AppDelegate.swift in Sources */,
+				B318E4FB2402B06F00519A22 /* CustomerViewModel.swift in Sources */,
 				B336A344240288BF0088C503 /* SceneDelegate.swift in Sources */,
+				B318E4F92402B04000519A22 /* CustomerProvider.swift in Sources */,
+				B318E4F72402B01900519A22 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
