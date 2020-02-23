@@ -26,7 +26,9 @@ protocol CustomerViewModelType {
 
 class CustomerViewModel: CustomerViewModelType {
     var rx_state: Observable<FetchingState> {
-        return _state.asObservable().distinctUntilChanged()
+        return _state
+            .asObservable()
+            .distinctUntilChanged()
     }
 
     private let _provider: CustomerProviderType
