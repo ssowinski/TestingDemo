@@ -1,15 +1,16 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.2'
+use_frameworks!
 
 target 'TestingDemo' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
+end
 
-  # Pods for TestingDemo
-
-  target 'TestingDemoTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+# RxTest and RxBlocking make the most sense in the context of unit/integration tests
+target 'TestingDemoTests' do
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
+    pod 'Quick'
+    pod 'Nimble'
+    pod "SwiftyMocky"
 end
