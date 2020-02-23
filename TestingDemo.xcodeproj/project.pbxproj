@@ -11,6 +11,7 @@
 		B318E4F72402B01900519A22 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318E4F62402B01900519A22 /* Customer.swift */; };
 		B318E4F92402B04000519A22 /* CustomerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318E4F82402B04000519A22 /* CustomerProvider.swift */; };
 		B318E4FB2402B06F00519A22 /* CustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318E4FA2402B06F00519A22 /* CustomerViewModel.swift */; };
+		B318E4FD2402B16800519A22 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318E4FC2402B16800519A22 /* Mock.generated.swift */; };
 		B336A342240288BF0088C503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336A341240288BF0088C503 /* AppDelegate.swift */; };
 		B336A344240288BF0088C503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336A343240288BF0088C503 /* SceneDelegate.swift */; };
 		B336A346240288BF0088C503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336A345240288BF0088C503 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		B318E4F62402B01900519A22 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		B318E4F82402B04000519A22 /* CustomerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerProvider.swift; sourceTree = "<group>"; };
 		B318E4FA2402B06F00519A22 /* CustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewModel.swift; sourceTree = "<group>"; };
+		B318E4FC2402B16800519A22 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		B336A33E240288BF0088C503 /* TestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B336A341240288BF0088C503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B336A343240288BF0088C503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		B336A357240288C00088C503 /* TestingDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				B318E4FC2402B16800519A22 /* Mock.generated.swift */,
 				B336A358240288C00088C503 /* TestingDemoTests.swift */,
 				B336A35A240288C00088C503 /* Info.plist */,
 			);
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B318E4FD2402B16800519A22 /* Mock.generated.swift in Sources */,
 				B336A359240288C00088C503 /* TestingDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 import Foundation
 
+//sourcery: AutoMockable
 protocol CustomerProviderType {
     typealias SuccessActionType = (Customer) -> Void
     typealias ErrorActionType = (Error) -> Void
