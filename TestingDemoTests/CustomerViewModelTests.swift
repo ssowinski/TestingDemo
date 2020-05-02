@@ -1,5 +1,5 @@
 //
-//  CustomerViewModelTypeTests.swift
+//  CustomerViewModelTests.swift
 //  TestingDemoTests
 //
 //  Created by Sławomir Sowiński on 23/02/2020.
@@ -15,7 +15,7 @@ import SwiftyMocky
 
 @testable import TestingDemo
 
-class CustomerViewModelTypeTests: QuickSpec {
+class CustomerViewModelTests: QuickSpec {
     override func spec() {
         var sut: CustomerViewModel!
         var providerMock: CustomerProviderTypeMock!
@@ -41,7 +41,7 @@ class CustomerViewModelTypeTests: QuickSpec {
             providerMock = CustomerProviderTypeMock()
         }
 
-        // mocking function that calls hadler
+        // mocking function that calls handler
         func setupProviderMockForSuccess() {
             providerMock.perform(.getCustomer(with: .any,
                                               successHandler: .any,
@@ -81,8 +81,6 @@ class CustomerViewModelTypeTests: QuickSpec {
             }
 
             describe("init") {
-
-
                 it("rx_state should emit one value") {
                     let testObserver = testScheduler.createObserver(FetchingState.self)
 
@@ -112,7 +110,8 @@ class CustomerViewModelTypeTests: QuickSpec {
                             sut.viewWillAppear()
                             providerMock.verify(.getCustomer(with: .value(testCustomerId),
                                                              successHandler: .any,
-                                                             errorHandler: .any), count: 1)
+                                                             errorHandler: .any),
+                                                count: 1)
                         }
 
                         it("rx_state should emit three value, last error") {
@@ -158,7 +157,8 @@ class CustomerViewModelTypeTests: QuickSpec {
                         sut.viewWillAppear()
                         providerMock.verify(.getCustomer(with: .value(testCustomerId),
                                                          successHandler: .any,
-                                                         errorHandler: .any), count: 1)
+                                                         errorHandler: .any),
+                                            count: 1)
                     }
 
                     it("rx_state should emit three value, last results") {

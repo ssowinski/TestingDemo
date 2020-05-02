@@ -20,10 +20,10 @@ PODS:
 DEPENDENCIES:
   - Nimble
   - Quick
-  - RxBlocking (~> 5)
-  - RxCocoa (~> 5)
-  - RxSwift (~> 5)
-  - RxTest (~> 5)
+  - RxBlocking
+  - RxCocoa
+  - RxSwift
+  - RxTest
   - SwiftyMocky
 
 SPEC REPOS:
@@ -49,6 +49,6 @@ SPEC CHECKSUMS:
   Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
   SwiftyMocky: f277174040db328a9da04ce8efa81b6d6d5b9d7d
 
-PODFILE CHECKSUM: b72ab5cd72b0b02b90052c0e5e4c4df4965058c6
+PODFILE CHECKSUM: 6cdc36c01c4557ddee5bcbe36a480487ef9e7cc1
 
 COCOAPODS: 1.8.4
